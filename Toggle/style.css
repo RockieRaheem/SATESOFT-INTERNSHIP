@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: blue;
+    height: 100%;
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+}
+body{
+    background: grey;
+    height: 100vh;
+}
+.mode{
+    margin-top: 20px;
+    background: red;
+    height: 40px;
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.mode-switch{
+    color: white;
+}
+.toggle{
+    background: pink;
+    height: 100%;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.switch{
+    position: relative;
+    background: white;
+    height: 20px;
+    width: 40px;
+    border-radius: 20px;
+}
+.switch::before{
+    content: '';
+    top: 50%;
+    margin-left: 5px;
+    position: absolute;
+    background: orangered;
+    height: 15px;
+    width: 15px;
+    border-radius: 7.5px;
+    transform: translateY(-50%);
+}
+
+.switch.on::before {
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
